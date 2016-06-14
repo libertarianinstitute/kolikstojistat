@@ -1,0 +1,37 @@
+h3 {
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 15px;
+}
+.centered{ text-align: center; margin: 0px auto;}
+table {margin: 15px; }
+table.sttab>tbody>tr{
+	td{
+		padding: 0 10px;
+	}
+	&:nth-child(1){ background-color: orange; }
+&:nth-child(2){ background-color: red; }
+}
+
+.caution { color: red; font-weight: bold;}
+
+#content {
+	font-size: 130%;
+}
+.placeholder{
+	background-color: #dddddd;
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid black;
+}
+
+div.detail{
+	font-size: 75%;
+	margin: 5px 25px;
+	padding: 10px;
+	background-color: #fafafa;	
+}
+
+.bold {
+	font-weight: bold;
+}

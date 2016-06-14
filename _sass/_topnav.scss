@@ -1,20 +1,31 @@
-header.site-header{
-	background-color: $li;
-	
-	#topnav{
-		line-height: 56px;
-		background-color: $li;
-		font-size: 120%;
-		
-		.nitem{
-			margin: 0px 15px;
-			>a{
-        			color: white;
-        		}
-    		}
-	}
-}
+header#site-header{
+	width: 100%;
 
-.navbar{
-    
+	#top-banner{
+		height: 50px;
+		text-align: center;
+		font-size: 30px;
+		padding: 10px;	
+		
+	}
+	
+	.navtainer{
+		border-bottom: 1px solid black;
+		border-top: 1px solid black;
+		background-color: #fbfbfb;
+		.wrapper{
+			
+			nav#top-nav{
+				
+				display: flex;
+				justify-content: space-between;
+				height: 65px;
+				.nitem{
+					width: 15%;
+					text-align: center;
+				}
+			}
+		}
+	}
+
 }
