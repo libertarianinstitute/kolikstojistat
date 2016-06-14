@@ -4,10 +4,10 @@
     <title>Libertariani.cz - template</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://libertarianinstitute.github.io/kss/</link>
-    <atom:link href="http://libertarianinstitute.github.io/kss/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Jun 2016 14:29:20 +0200</pubDate>
-    <lastBuildDate>Mon, 13 Jun 2016 14:29:20 +0200</lastBuildDate>
+    <link>http://libertarianinstitute.github.io/kolikstojistat/</link>
+    <atom:link href="http://libertarianinstitute.github.io/kolikstojistat/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 14 Jun 2016 16:08:30 +0200</pubDate>
+    <lastBuildDate>Tue, 14 Jun 2016 16:08:30 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
   </channel>
