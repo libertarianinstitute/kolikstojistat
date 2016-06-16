@@ -9,7 +9,8 @@
 # Baseurl = name of github repository linked to libertarianinstitute account
 #
 #
-title: Libertariani.cz - template
+projname: kolik stojí stát
+title: Kolik stojí stát
 email: michal.kurz@libertariani.cz
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
