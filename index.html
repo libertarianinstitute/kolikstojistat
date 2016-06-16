@@ -1,4 +1,81 @@
-<!DOCTYPE html>
+<!doctype htmli>
+<title>Na této stránce právě pracujeme</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="/kolikstojistat/liblock/md5.js"></script>
+
+
+<style>
+	body {background-color: #eee;}
+	#logo{
+		width: 502px;
+		margin: 0px auto;
+	}
+	
+	#text{
+		font-size: 55px;
+		line-height: 75px;
+		margin: 20px auto;
+		padding-top: 25px; 
+		font-weight: bold;
+		text-align:center;
+		border-top: 2px solid #232369;
+		font-family: sans-serif;
+	}
+
+	.projname{ color: #232369}
+
+	#app{
+		width: 300px;
+		margin: 0px auto;
+	}
+	.inv{
+		display: none !important;
+	}
+	#par{
+		margin: 0px;
+	}
+	.dummy {
+
+	}
+</style>
+
 <body>
-<head><meta charser="utf-8"/><meta http-eqiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content="pageexcerptHERE"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css"/><link rel="stylesheet" href="/kolikstojistat/css/main.css"/><link rel="canonical" href="http://www.zdvojenaadresa.abc"/><script src="/kolikstojistat/js/ui.js"></script></head><header id="site-header"><div id="top-banner"><div class="wrapper"> Cena státu</div></div><div class="navtainer"> <div class="wrapper"><nav id="top-nav"><div class="nitem" id="home" onclick="window.location.replace('./index.html')">Kolik stojí stát</div><div class="nitem" id="vydelat" onclick="window.location.replace('./vydelat.html')">Na co musíme měsíčně vydělat </div><div class="nitem" id="naklad" onclick="window.location.replace('./naklad.html')">Náklad ztracené příležitosti</div><div class="nitem" id="dostaneme" onclick="window.location.replace('./dostaneme.html')">Kolik měsíčně dostaneme </div><div class="nitem" id="koupime" onclick="window.location.replace('./koupime.html')">Co si za čístý příjem koupíme</div><div class="nitem" id="potencial" onclick="window.location.replace('./potencial.html')">Náklad ztraceného potenciálu </div><div class="nitem" id="stahnete" onclick="window.location.replace('./dl.html')">Stáhněte si</div></nav></div></div></header><div class="wrapper"><div id="content"><h3>Napadlo Vás někdy, kolik nás stojí stát?</h3><table class="sttab"><tr><td>Potenciální mediánová mzda při eliminaci státních zásahů</td><td>81 258,- Kč</td></tr><tr><td>Celková měsíční ztráta kvůli státu</td><td>66 605,- Kč</td></tr></table></div><p>Možná znáte rozdíl mezi hrubou a čistou mzdou...</p><p>...možná, že jste někdy slyšeli i o superhrubé mzdě</p><p>Ale to zdaleka není všechno! </p><p>Kolik zaplatíte státu, aniž byste o tom věděli?</p><p>Kolik by Vám zůstalo, kdyby se stát nemíchal, kam nemá?</p><p>Státu jste nuceni věnovat <span class="caution">75% svého úsilí, času a peněz!</span></p><div class="placeholder">úderná infografika (jednoduché a efektní by bylo tady použít nápad „Kolik vykouří stát“) – upozorňující na celkový výsledek –75% cigaret = našich peněz, času, energie a zdrojů jde státu! Při hrubé mzdě22 531 bychom mohli doopravdy mít 58732! Stát vás připravil o 44 tisíc! – 16 cigaret = popelník s 16 vykouřenými cigaretami + krabička, kde zůstaly čtyři = tolik vykouřil stát, tolik zbylo pro vás</div></div>
+	
+	<div id="content">
+		<div id="logo"><img src="/kolikstojistat/liblock/logo.png" height="500px" width="500px"></div>
+	
+		<div id="text">
+			<p id="par">Stránky projektu<span class="projname"> kolik stojí stát</span> pro vás teprve připravujeme.<br></p>
+		</div>
+	</div>	
+
+	<div id="app" class="inv">
+		<input type="password" id="pass"> 
+		<input type="button" id="b" value="GO">
+		
+
+	</div>		
+
+			
+		
+
+
+	<script>	    			
+		document.getElementById("logo").onclick = function() {
+    			document.getElementById("app").className = "dummy"; 		
+		};
+		
+		document.getElementById("b").onclick = function() {
+			var pwhash = "e16f85493cf4d3c525101c3c2191110e";
+    			var pwatt = $("#pass").val();
+			var hashatt = $.md5(pwatt);
+			 
+			if( hashatt === pwhash) {
+    				window.location.replace("/kolikstojistat/home.html");   
+    			}
+		
+		};
+	</script>
 </body>
+
+
