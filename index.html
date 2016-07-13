@@ -1,29 +1,44 @@
-<!doctype htmli>
+	<!doctype html>
 <title>Na této stránce právě pracujeme</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script src="/liblock/md5.js"></script>
-
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 
 <style>
-	body {background-color: #eee;}
+	
+	#content{
+		width: 1080px;
+		margin: 0px auto;
+	}
+	body {background-color: #eee; font-family: calibri;}
 	#logo{
 		width: 502px;
 		margin: 0px auto;
 	}
-	
+	.liblue{color: #232369;}
 	#text{
 		font-size: 55px;
 		line-height: 75px;
-		margin: 20px auto;
+		margin: 20px 0px auto;
 		padding-top: 25px; 
 		font-weight: bold;
-		text-align:center;
-		border-top: 2px solid #232369;
-		font-family: sans-serif;
+		text-align:justify;
 	}
-
-	.projname{ color: #232369}
-
+	#iframe{
+		overflow:hidden;
+		
+		width: 1080px;
+		height: 800px;
+	}
+	#projgoal{
+		font-size: 20px;
+	}
+	.lihe{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	ul>li{
+		font-size: 18px;
+	}
 	#app{
 		width: 300px;
 		margin: 0px auto;
@@ -34,6 +49,9 @@
 	#par{
 		margin: 0px;
 	}
+	.bold{
+		font-weight: bold;
+	}
 	.dummy {
 
 	}
@@ -42,39 +60,51 @@
 <body>
 	
 	<div id="content">
-		<div id="logo"><img src="/liblock/logo.png" height="500px" width="500px"></div>
 	
 		<div id="text">
-			<p id="par">Stránky projektu<span class="projname"> kolik stojí stát</span> pro vás teprve připravujeme.<br></p>
+			<p id="par">Na tomto webu pro vás připravujeme projekt <span id="locker" class="liblue"> Kolik stojí stát</span>.</p>
 		</div>
-	</div>	
+			<p id="projgoal">Cílem projektu je poukázat na nepříliš známé skutečnosti o tom, kolik peněz si od nás stát bere každý měsíc.
+</p>
+	
+		<span class="lihe">Můžete se těšit na:</span>
+		<ul> <li>nečekaná odhalení, která vás zaručeně zvednou ze židle;</li> <li>užitečné informace, které nikde jinde nenajdete;</li> <li>zajímavé grafiky, které vás přimějí se zamyslet.</li> </ul>
 
+			
+		
+		<div class="lihe">Jak nám můžete pomoci: </div>
+		<p>Můžete poslat příspěvěk na transparentní účet Libertariánského insitutu <a href="https://www.fio.cz/ib2/transparent?a=2800929423"><span class="liblue">transparentní účet<span class="bold"> č. 2800929423/2010</span></span></a></p>
+		<p>Ve zprávě pro příjemce prosím uveďte, že chcete, abychom příspěvek použili na projekt Kolik stojí stát </p>
+		<p>Pokud máte další nápady, jak pomoci našemu projektu, případně se chcete na něco zeptat, využijte našeho kontaktního formuláře:</p>
+<iframe id="iframe" frameborder="0" height=" 800px" src="http://www.libertarianskyinstitut.cz/cs/outform/"><<!-- FUCK --></iframe>	
 	<div id="app" class="inv">
 		<input type="password" id="pass"> 
 		<input type="button" id="b" value="GO">
 		
 
-	</div>		
-
-			
-		
+	</div>
+	</div>	
 
 
 	<script>	    			
-		document.getElementById("logo").onclick = function() {
-    			document.getElementById("app").className = "dummy"; 		
+		document.getElementById("locker").onclick = function() {
+    			$("#iframe").hide();
+			document.getElementById("app").className = "dummy"; 		
 		};
 		
 		document.getElementById("b").onclick = function() {
 			var pwhash = "e16f85493cf4d3c525101c3c2191110e";
     			var pwatt = $("#pass").val();
-			var hashatt = $.md5(pwatt);
+			var hashatt = md5(pwatt);
 			 
 			if( hashatt === pwhash) {
     				window.location.replace("/home.html");   
     			}
 		
 		};
+		
+	
+
 	</script>
 </body>
 
